@@ -91,7 +91,7 @@ export default async function parseConfig({ defaults: defaultsIn = {}, clips, ar
       return outLayers;
     }
 
-    if (['title', 'subtitle', 'news-title', 'slide-in-text'].includes(type)) {
+    if (['title', 'subtitle', 'news-title', 'slide-in-text', 'interactive-text'].includes(type)) {
       assert(layer.text, 'Please specify a text');
 
       let { fontFamily } = layer;
