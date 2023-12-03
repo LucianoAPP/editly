@@ -420,7 +420,7 @@ export async function interactiveTextFrameSource({ width, height, params: { posi
     let stylesMap = new Map();
     if (styles) {
       styles.forEach((item) => {
-        LayerStyleItem = stylesMap[item.lindex] || new Map();
+        let LayerStyleItem = stylesMap[item.lindex] || new Map();
         LayerStyleItem[item.cindex] = item.style;
         stylesMap[item.lindex] = LayerStyleItem
       });
